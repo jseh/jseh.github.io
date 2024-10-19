@@ -1,14 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio Jose</title>
-  <script type="module" crossorigin src="/assets/index-P5WNMCR1.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-0eUvi3yb.css">
-</head>
-<body>
-<div id="root"></div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link href=" https://cdn.jsdelivr.net/npm/bigger-picture@1.1.17/dist/bigger-picture.min.css " rel="stylesheet">
+
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">José</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Trabajo</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hola,<br>Soy <span class="home__title-color">José</span><br> Desarrollador web</h1>
+
+                    <a href="#" class="button">Descargar CV</a>
+                </div>
+
+                <div class="home__social">
+                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
+                    <a href="https://github.com/jseh" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Acerca de</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/ctm/side.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Hola</h2>
+                        <p class="about__text">
+                            Mi nombre es José Ramírez, soy ingeniero con especialidad en sistemas de información, con mas de 5 años en el sector, transformando ideas en experiencias web excepcionales. He trabajado para startups y grandes empresas en el diseño, desarrollo e implementación de sitios e aplicaciones web empresariales, siempre con soluciones innovadoras y eficientes.
+                        </p>           
+                        <p class="about__text tp" >Disfruto explorando nuevas tecnologías y tendencias en el mercado, así como también, colaborar con equipos multidisciplinarios para enfrentar desafíos complejos con creatividad y determinación.
+                        </p>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Habilidades</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <!-- <h2 class="skills__subtitle">Habilidades profesionales</h2> -->
+
+                        <ul class="skills__text lista">
+                            <li><b>Lenguajes de programación:</b>  Typescript, Javascript, Python y C#</li>
+                            <li><b>Bases de datos:</b> Sql server, Mysql y Mongo</li>
+                            <li><b>Web:</b> Html, CSS y Tailwind</li>
+                            <li><b>DevTools:</b> Docker, Git</li>
+                            <li><b>Clouds:</b> Aws(Eb, Route53, s3, Rds, Ec2, Lambda)</li>
+                            <li><b>Frameworks:</b> Angular, Vue, Asp, Fastapi, NestJS</li>
+                        </ul>
+                 
+
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== Tech =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Tecnologías</h2>
+
+                <div class="tc">
+                    <img src="assets/img/tec/angular.png" alt=""">
+                    <img src="assets/img/tec/dotnet.png" alt=""">
+                    <img src="assets/img/tec/nest.png" alt=""">
+                    <img src="assets/img/tec/node.png" alt=""">
+                    <img src="assets/img/tec/vue.png" alt=""">
+                </div>
+
+             
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Trabajos</h2>
+
+                <div id="images" class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/pro/cadim.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/pro/agendador.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/pro/motua-otu.jpg" alt="">
+                    </a>
+              
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contacto</h2>
+
+                <div class="contact__tc">
+                    <p class="about__text t-center">Mirando por nuevas oportunidades y emocionado por los desafíos que el futuro puede traer, si eres negocio buscando presencia web o empleador en busca de talento, no dudes en contactar conmigo aquí mismo.
+                </div>
+                </p>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Nombre" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">José</p>
+            <!-- <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div> -->
+            <p class="footer__copy">&#169; Todos los derechos reservados</p>
+        </footer>
+
+
+        <!--===== BIGGER PICTURE =====-->
+        <script src=" https://cdn.jsdelivr.net/npm/bigger-picture@1.1.17/dist/bigger-picture.min.js "></script>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
